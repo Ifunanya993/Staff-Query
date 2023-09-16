@@ -2,8 +2,8 @@
 
 ## INTRODUCTION
 Structured Query Language (SQL) is a data analysis tool use to store, organise and analyze data.
-Query is a question or inquiry about a setof data. We use Structured Query Language (SQL) to
-retrieve meaninful and relevant information from databases.
+Query is a question or inquiry about a set of data. We use Structured Query Language (SQL) to
+retrieve meaningful and relevant information from databases.
 When building a structure , we pull data from tables and fields .The fields are the columns in the 
 database table, while the actual data makes up the rows.
 Every programming language includuing SQL follows a guidelines known as syntax.
