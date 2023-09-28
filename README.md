@@ -298,7 +298,62 @@ UPDATE Employee_info
 
 SET YEAR_OF_EXIT = DATE_ADD(DATE_OF_ENTRY,INTERVAL 10 YEAR);
 
-and execute, it will return a year of exit in 10 years.  
+and execute, it will return a year of exit in 10 years.
+
+
+## TASK THREE
+
+*  Replace the department 'Communications' with 'Stakeholders' and show the result
+   of the replacement done.
+
+* Update the 'Name' column ensuring that the values are all in UPPER CASE
+
+* Run a query that will show the Employees' Names and DOE in one column as
+  'Employee's brief'.
+
+* Write a query that will remove leading spaces from the Name column (if exists)
+
+
+## ANSWER
+
+### TO REPLACE DEPARTMENT
+
+USE CODE
+
+UPDATE employee_salary
+
+SET Department = "Stakeholders"
+
+WHERE Employee_ID = 4; and execute , it will be updated in the department column
+
+
+### TO UPDATE NAME COLUMN IN UPPER CASE
+
+USE CODE
+
+UPDATE employee_info
+
+SET name = UPPER("name"); and your table name will be update in UPPER CASE
+
+
+
+### To RUN A QUERY THAT RETURN EMPLOYEE'S BRIEF
+
+USE CODE
+
+SELECT CONCAT(NAME ," ", DATE_OF_ENTRY) AS `Employee's brief`
+
+FROM Employee_info; and execute. it will run a query showing employee name and date of entry together
+
+showing as Employee's brief.
+
+
+### TO REMOVE ANY LEADING TRACE OF SPACE
+
+USE CODE
+
+SELECT TRIM()
+
 
 ------------------------
 
